@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>MARVIN MONTEROLA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>TRAVEL<br>CATALOG</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">SPECIAL OFFERS</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">TRAVEL CATALOG</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521c3cc6b246ffa3dbbaa8/Jamaa-El-Fna-Market/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="MARAKESH, Morocco">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521cdf6ab4d7c1914360f5/Lone-Peak-Big-Sky-Montana-USA/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Big Sky, Montana">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521d0ec6b246ffa3dbbaaa/Vines-in-a-vineyard-in-Alentejo-region--Portugal--at-sunset/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Alentejo, Portugal">
+    </div>
+
+    <div class="w3-third">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521d54c6b246ffa3dbbaac/Longyearbyen-houses/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Svalbard, Norway">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521d876ab4d7c1914360f7/Deserted-beach-with-clear-water--Naoshima/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Naoshima, Japan">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521db73f3379d6afe382e5/Paros-island--Greece/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Paros, Greece">
+    </div>
+    
+    <div class="w3-third">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521dfb6ab4d7c1914360f9/beach-with-boulders-and-palm-trees-in-Virgin-Gorda--BVI/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Virgin Gorda, British Virgin Islands">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521e4d1242e32d05dbbaa6/Elizabeth-Quay--Perth--Western-Australia--Australia/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Perth, Australia">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/63521e6e3f3379d6afe382e7/Senanque-Abbey--Provence--France-/960x0.jpg?format=jpg&width=960" style="width:100%" onclick="onClick(this)" alt="Provence, France">
+    </div>
+  </div>
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!--video-->
+
+  <div class="video">
+   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjFzkhrqIZs?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+  
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-6/311011309_5617783854909509_7286110726661380087_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGc0NDyXnyhNnVk_DpJo816iOmDotoHDNuI6YOi2gcM21pWr2TmZKAJdlZgL2CNI-mKEHp_Z4vUPd1T9929zcXy&_nc_ohc=8fzmVNx6aooAX9i9pQq&_nc_ht=scontent.fdvo3-1.fna&oh=00_AfCfql9GGeDYVkHb6UTOaUm0AtdTFpNU7VYvr61mQECs_g&oe=63F3BCB3" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>My Name is Marvin Monterola!</h4>
+      <p>Hi there, I'm a passionate traveler and adventurer with a love for exploring new cultures and destinations. I believe that traveling opens up a world of possibilities and can enrich our lives in countless ways.
+
+        My journey started at a young age when my parents took me on my first international trip. I was captivated by the beauty and diversity of the world, and I knew from that moment on that I wanted to see as much of it as I could. Since then, I have visited numerous countries and experienced a wide range of cultures, from the bustling streets of Tokyo to the tranquil beaches of Bali.
+        
+        As a traveler, I seek out authentic experiences that allow me to connect with locals and learn about their way of life. Whether it's sampling street food in a night market or hiking through a remote wilderness, I'm always eager to step outside of my comfort zone and embrace new adventures.
+        
+        Through my travels, I have learned that the world is full of surprises and that there is always something new to discover. I'm excited to share my experiences and insights with fellow travelers and help them plan their own unforgettable journeys. So whether you're a seasoned globetrotter or a first-time adventurer, I'm here to inspire you and guide you on your travel journey. Let's explore the world together!
+        
+        
+      </p>
+      <p>mail: monterolamarvin@gmail.com</p>
+      </div>
+        
+       
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">I hope you will visit my other page <a href="https://www.facebook.com/raiichuu" title="FACEBOOK" target="_blank" class="w3-hover-opacity">facebook.com</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>

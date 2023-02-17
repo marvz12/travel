@@ -1,0 +1,20 @@
+.w3-third {
+  border: 4px solid rgb(122, 205, 129);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  
+}
+.w3-image{
+  border: 5px solid rgb(117, 56, 231);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  justify-content: center;
+  object-fit: contain;
+  
+}
+.video{
+  padding-top: 40px;
+  object-position: center;
+  padding-left: 200px;
+  padding-bottom: 40px;
+}
+
